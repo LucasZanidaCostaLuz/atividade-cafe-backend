@@ -1,4 +1,4 @@
-const {v4: uuidv4} = require("uuid");
+const { v4: uuidv4} = require("uuid");
 
 class Coffee{
     constructor(product, price){
@@ -8,4 +8,4 @@ class Coffee{
     }
 }
 
-module.exports = Coffee 
+module.exports = Coffee

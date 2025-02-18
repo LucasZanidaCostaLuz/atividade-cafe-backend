@@ -1,12 +1,12 @@
 class CoffeeList{
     constructor(){
-        this.coffee = []
+        this.coffees = []
     }
     addProduct(coffee){
-        this.coffees.push[coffee]
+        this.coffees.push(coffee);
     };
     getAllProduct(){
-        return this.coffees
+        return this.coffees;
     }
 }
 

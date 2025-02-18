@@ -10,16 +10,16 @@ class OrderList {
         return order;
     };
 
-    addOrderById(id){
-        const order = getOrderById(id);
-        if(!order){
-            throw new Error("escolha um pedido existente no menu");
-        }
-        return this.orders.push(order);
+    addOrder(order){
+    this.orders.push(order);
     };
 
-    deleteOrder(id){
-        this.orders = this.orders.filter(order = order.id != id);
+    deleteOrder(id, status){
+        if(status = "preparado"){
+            throw new Error("Não é possível deletar um pedido pronto")
+        } else{
+            this.orders = this.orders.filter(order = order.id != id);
+        }
     }
 }
 
